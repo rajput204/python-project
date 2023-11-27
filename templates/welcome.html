@@ -1,0 +1,11 @@
+{%extends 'main.html' %}
+{%block title%} WELCOME TO ONLINE TESTING SYSTEM {%endblock title%}
+
+{%block top%}
+<a href="{% url 'OTS:registrationForm'%}">signup</a>
+<a href="{%url 'OTS:login'%}">login</a>
+
+{%endblock%}
+{%block content%}
+<p><span><h1 class="animate__animated animate__bounce" >Welcome to online  testing system<h1></span></p>
+{%endblock%}

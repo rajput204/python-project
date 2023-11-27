@@ -1,0 +1,19 @@
+.button-link{
+    width:200px;
+    height:40px;
+    background:linear-gradient(#00f032,#00a0ea);
+    margin-bottom: 20px;
+    padding:20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px #121112;
+    
+    
+    
+    }
+    
+    .button-link a{
+        text-decoration: none;
+        color:#f0f032;
+        font-size: 22px;
+    }

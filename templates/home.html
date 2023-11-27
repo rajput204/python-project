@@ -1,0 +1,23 @@
+{%extends 'main.html' %}
+{%block title%} OTS-candidate ots homepage {%endblock title%}
+
+{%block top%}
+<a href="{% url 'OTS:home'%}">signup</a>
+<a href="{%url 'OTS:logout'%}">logout</a>
+
+{%endblock%}
+{%block content%}
+<h1>WELCOME{{request.session.name}},to your home page</h1><!-- previously we had made a login session variable and used here to display the name only-->
+<div class="button-link">
+    <a href="{%url 'OTS:testpaper'%}?n=1">Test of 1 question</a> <!--it will tell the number of question using  question mark and n variables-->
+</div>
+<div class="button-link">
+    <a href="{%url 'OTS:testpaper'%}?n=3">Test of 3 question</a> <!--it will tell the number of question using  question mark and n variables-->
+</div>
+<div class="button-link">
+    <a href="{%url 'OTS:testpaper'%}?n=5">Test of  5 question</a> <!--it will tell the number of question using  question mark and n variables-->
+</div>
+<div class="button-link">
+    <a href="{%url 'OTS:testHistory'%}">test history</a> <!--it will tell the number of question using  question mark and n variables-->
+</div>
+{%endblock%}

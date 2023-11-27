@@ -1,0 +1,41 @@
+form{
+    box-sizing: border-box;
+    padding:20px;
+    border-radius: 20px;
+    background-image:linear-gradient(#ff3e9d,#0e1f40);
+    display: table;
+    width:100%;
+    box-shadow: 10px 10px rgb(211, 199, 199);
+    
+} 
+
+input{
+    display:block;
+    width:100%;
+    margin-bottom: 20px;
+    height: 30px;
+    font-size: 22px;
+    border-radius: 20px;
+
+}
+.question{
+   color:#AAFF00;
+    font-size:22px;
+    font-weight: bold;
+ 
+}
+.options{
+    font-size: 22px;
+}
+.options input{
+    display:inline;
+    width:fit-content;
+    height:10px;
+
+}
+
+#submit{
+    border-radius: 20px;
+    
+}
+

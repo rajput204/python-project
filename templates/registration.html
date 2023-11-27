@@ -1,0 +1,25 @@
+{%extends 'main.html' %}
+
+{%block title%} OTS-REGISTRATION STATUS {%endblock title%}
+{%block top%}
+<a href="{% url 'OTS:registrationForm'%}">signup</a>
+<a href="{%url 'OTS:login'%}">login</a>
+{%endblock%}
+{%block content%}
+{%if userStatus == 1%}
+    <div class="userStatus">
+        Sorry,username already existed,please try different username.
+        <a href="{% url 'OTS:registrationForm'%}">back to candidate registration form</a>
+    </div>
+{%elif userStatus == 2 %}
+    <div class="userStatus">
+     congratulation,user created successfully
+     <a href="{%url 'OTS:login'%}">login</a>
+    </div>
+{%elif userStatus == 3 %}
+    <div class="userStatus">
+        oops!something went wrong
+        <a href="{% url 'OTS:registrationForm'%}">signup</a>
+    </div>
+{% endif %}
+{%endblock%}

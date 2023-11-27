@@ -1,0 +1,104 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+body{
+   background-image: url(https://cdn.pixabay.com/photo/2017/08/06/22/01/books-2596809_1280.jpg);
+   background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+
+.top{
+    height:50px;
+    box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.5);
+    margin:20px;
+    padding:10px;
+}
+.top div.sitename{
+    display: inline-block;
+    /* color:#f64c72; */
+    color:antiquewhite;
+    position: relative;
+    top:-10px;
+ 
+}
+.top div.menu{
+    float:right;
+    font-size: 22px;
+
+}
+
+.top div.menu a{
+    color:#ff2f00;
+    display: inline-block;
+    min-width: 50px;
+    margin-right:10px;
+
+}
+table{
+    width:90%;
+}
+table tr:nth-child(odd){
+    background-color: #DFFF00;
+    color: white;
+    height: 30px;
+}
+table tr:nth-child(even){
+background-color: #afd275;
+height: 30px;
+}
+table tr:first-child{
+    background-color: rgb(255, 0, 119);
+}
+table td{
+    text-align: center;
+}
+.content{
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+span.special{
+    color:rgb(233, 249, 0);
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: x-large ;
+}
+span{
+    color: #f90505;
+}
+.animate__animated.animate__bounce {
+    --animate-duration: 5s;
+  }
+  
+  /* This changes all the animations globally */
+  :root {
+    --animate-duration: 800ms;
+    --animate-delay: 0.9s;
+    --animate-repeat:2;
+  }
+  .animate__animated.animate__bounce{
+    background-color: #ff0062;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);    
+background-size: cover;
+background-position: center;
+background-clip:text;
+-webkit-background-clip:text;
+color:transparent;
+
+  }
+  .user{
+    padding:20px;
+    font-size: medium;
+    font-weight: bold;
+    color:#000000;
+    
+  }
+  .user a{
+    text-decoration: none;
+    color:red;
+  }
+ 
+ 
